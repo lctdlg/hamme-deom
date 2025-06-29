@@ -134,9 +134,9 @@ export const Haame = () => {
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden absolute right-5 top-5">
-            <Button 
-              variant="ghost" 
-              size="icon" 
+            <Button
+              variant="ghost"
+              size="icon"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="h-10 w-10"
             >
@@ -341,16 +341,14 @@ export const Haame = () => {
                   <div key={index} className="mb-[70px]">
                     <div className="flex justify-between items-center">
                       <h3
-                        className={`font-semibold text-base ${
-                          feature.isActive ? "text-[#0154fc]" : "text-[#020f2c]"
-                        }`}
+                        className={`font-semibold text-base ${feature.isActive ? "text-[#0154fc]" : "text-[#020f2c]"
+                          }`}
                       >
                         {feature.title}
                       </h3>
                       <ChevronDownIcon
-                        className={`w-6 h-6 ${
-                          feature.isActive ? "transform rotate-180" : ""
-                        }`}
+                        className={`w-6 h-6 ${feature.isActive ? "transform rotate-180" : ""
+                          }`}
                       />
                     </div>
 
@@ -415,7 +413,7 @@ export const Haame = () => {
                 seamless integrations across platforms.
               </p>
 
-              <Button 
+              <Button
                 className="mt-10 bg-[#020f2c] text-white rounded-[14px] px-6 py-4"
                 onClick={() => setDemoPopupOpen(true)}
               >
@@ -806,7 +804,7 @@ export const Haame = () => {
                     />
                   </div>
 
-                  <Button 
+                  <Button
                     className="absolute h-12 top-[11px] left-[285px] bg-[#020f2c] text-white font-semibold rounded-[14px]"
                     onClick={() => setDemoPopupOpen(true)}
                   >
@@ -945,56 +943,56 @@ export const Haame = () => {
         {demoPopupOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
             <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 relative">
-              <Button 
-                variant="ghost" 
-                size="icon" 
+              <Button
+                variant="ghost"
+                size="icon"
                 className="absolute top-4 right-4"
                 onClick={() => setDemoPopupOpen(false)}
               >
                 <X className="h-6 w-6" />
               </Button>
-              
+
               <h2 className="text-2xl font-semibold text-[#020f2c] mb-6">Get a Demo</h2>
-              
+
               <div className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-[#656b8a] mb-1">Full Name</label>
-                  <Input 
-                    className="w-full border border-[#d9dfeb] rounded-lg" 
+                  <Input
+                    className="w-full border border-[#d9dfeb] rounded-lg"
                     placeholder="Enter your full name"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-[#656b8a] mb-1">Email</label>
-                  <Input 
-                    className="w-full border border-[#d9dfeb] rounded-lg" 
+                  <Input
+                    className="w-full border border-[#d9dfeb] rounded-lg"
                     placeholder="Enter your email"
                     type="email"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-[#656b8a] mb-1">Company</label>
-                  <Input 
-                    className="w-full border border-[#d9dfeb] rounded-lg" 
+                  <Input
+                    className="w-full border border-[#d9dfeb] rounded-lg"
                     placeholder="Enter your company name"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-[#656b8a] mb-1">Phone Number</label>
-                  <Input 
-                    className="w-full border border-[#d9dfeb] rounded-lg" 
+                  <Input
+                    className="w-full border border-[#d9dfeb] rounded-lg"
                     placeholder="Enter your phone number"
                     type="tel"
                   />
                 </div>
-                
+
                 <Button className="w-full bg-[#0154fc] hover:bg-[#0143d1] text-white font-semibold py-3 rounded-lg mt-4">
                   Request Demo
                 </Button>
-                
+
                 <p className="text-xs text-[#656b8a] text-center mt-4">
                   By submitting this form, you agree to our <a href="#" className="text-[#0154fc]">Terms of Service</a> and <a href="#" className="text-[#0154fc]">Privacy Policy</a>.
                 </p>
